@@ -9,28 +9,37 @@
 
 <style>
   body {
-    background: #0f172a;
+    background: #0b1220;
     color: white;
     font-family: system-ui;
   }
 
   .card {
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: 0.3s;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255,255,255,0.08);
   }
 
   .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
+    transition: 0.3s;
   }
 
   .container {
-    max-width: 900px;
+    max-width: 950px;
     margin: auto;
-    padding: 20px;
+    padding: 24px;
+  }
+
+  .badge {
+    background: #1d4ed8;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-right: 6px;
   }
 
   a { color: #60a5fa; }
@@ -41,94 +50,124 @@
 
 <div class="container">
 
-<!-- HEADER -->
+<!-- HERO -->
 <div class="card">
-  <h1 class="text-3xl font-bold">Ramprabu Rajendran</h1>
-  <p class="text-lg">Quantity Surveyor (EPC / Industrial Projects)</p>
-  <p class="text-sm">Thiruvarur, Tamil Nadu, India</p>
-  <p class="text-sm">
-    📧 ramprabu724.rp@gmail.com | 📞 +91 8883024524 | 
-    🔗 <a href="https://www.linkedin.com/in/ramprabu724">LinkedIn</a>
-  </p>
+  <h1 class="text-4xl font-bold">Ramprabu Rajendran</h1>
+  <p class="text-xl text-blue-300 mt-1">Quantity Surveyor (EPC / Industrial Projects)</p>
+
+  <div class="mt-3 text-sm text-gray-300">
+    📍 Thiruvarur, Tamil Nadu, India <br/>
+    📧 ramprabu724.rp@gmail.com | 📞 +91 8883024524 <br/>
+    🔗 <a href="https://www.linkedin.com/in/ramprabu724">LinkedIn Profile</a>
+  </div>
+
+  <div class="mt-4">
+    <span class="badge">EPC</span>
+    <span class="badge">Cost Control</span>
+    <span class="badge">RA Billing</span>
+    <span class="badge">BOQ</span>
+  </div>
 </div>
 
 <!-- SUMMARY -->
 <div class="card">
-  <h2 class="text-xl font-semibold mb-2">Professional Summary</h2>
-  <p>
+  <h2 class="text-2xl font-semibold mb-3">Professional Summary</h2>
+  <p class="text-gray-200 leading-relaxed">
     Quantity Surveyor with 9+ years of experience in EPC, industrial, and residential construction projects.
-    Specialized in quantity take-off, Bill of Quantities preparation, cost control, contract coordination, and project cost management.
-    Experienced in commercial documentation, subcontractor coordination, and project execution support across industrial environments including Intel and Petronas projects.
-    Delivered 7+ residential and commercial projects (~₹3.5 Cr total value).
+    Specialized in quantity take-off, BOQ preparation, RA billing, cost control, and contract coordination.
+    Experience includes major industrial exposure with Intel and Petronas projects and delivery of 7+ residential/commercial projects (~₹3.5 Cr value).
   </p>
 </div>
 
-<!-- SKILLS -->
+<!-- CORE SKILLS -->
 <div class="card">
-  <h2 class="text-xl font-semibold mb-2">Core Competencies</h2>
-  <ul>
-    <li>Quantity Take-Off (Drawings & Site Measurement)</li>
-    <li>Bill of Quantities Preparation & Cost Estimation</li>
-    <li>Cost Control & Variation Analysis</li>
-    <li>Contract Administration</li>
-    <li>Subcontractor Coordination</li>
-    <li>Procurement Support</li>
-    <li>Site Measurement & Progress Tracking</li>
-    <li>As-built Documentation</li>
-  </ul>
+  <h2 class="text-2xl font-semibold mb-3">Core Competencies</h2>
+
+  <div class="grid grid-cols-2 gap-3 text-sm">
+
+    <div>
+      <h3 class="text-blue-300 font-semibold mb-2">Quantity Surveying</h3>
+      <p>BOQ • Quantity Take-off • RA Billing • Cost Estimation</p>
+    </div>
+
+    <div>
+      <h3 class="text-blue-300 font-semibold mb-2">Commercial Control</h3>
+      <p>Cost Control • Variation Analysis • Contract Admin</p>
+    </div>
+
+    <div>
+      <h3 class="text-blue-300 font-semibold mb-2">Execution Support</h3>
+      <p>Site Coordination • Subcontractors • Procurement</p>
+    </div>
+
+    <div>
+      <h3 class="text-blue-300 font-semibold mb-2">Documentation</h3>
+      <p>As-built • Drawing Review • Progress Tracking</p>
+    </div>
+
+  </div>
 </div>
 
 <!-- EXPERIENCE -->
 <div class="card">
-  <h2 class="text-xl font-semibold mb-2">Experience</h2>
+  <h2 class="text-2xl font-semibold mb-3">Professional Experience</h2>
 
-  <h3><b>Quantity Surveyor</b> | TAN BOCK KWEE & SONS SDN BHD | Malaysia (2024 – Present)</h3>
-  <ul>
-    <li>Supported quantity surveying activities for industrial EPC projects</li>
-    <li>Verified contractor claims and managed commercial documentation</li>
-    <li>Controlled cost tracking and variation analysis</li>
-    <li>Reviewed vendor quotations for procurement decisions</li>
-    <li>Prepared as-built drawings and measurement records</li>
-  </ul>
+  <div class="mb-6">
+    <h3 class="font-bold text-lg">Quantity Surveyor</h3>
+    <p class="text-blue-300">TAN BOCK KWEE & SONS SDN BHD | Malaysia (2024 – Present)</p>
+    <p class="text-sm text-gray-400">Intel Semiconductor | Petronas Fertilizer Plant</p>
 
-  <br/>
+    <ul class="list-disc ml-5 mt-2 text-gray-200 space-y-1">
+      <li>Supported EPC quantity surveying for billing certification and cost tracking</li>
+      <li>Verified contractor claims for RA billing and payment certification</li>
+      <li>Supported variation analysis and cost control activities</li>
+      <li>Reviewed vendor quotations for procurement decisions</li>
+      <li>Prepared as-built drawings and measurement records</li>
+    </ul>
+  </div>
 
-  <h3><b>Quantity Surveyor</b> | Mayura Construction | Chennai (2019 – 2022)</h3>
-  <ul>
-    <li>Prepared Bill of Quantities, take-off sheets, and cost estimates</li>
-    <li>Managed subcontractor coordination and project documentation</li>
-    <li>Supported procurement and material planning</li>
-    <li>Monitored site execution against drawings and specifications</li>
-  </ul>
+  <div class="mb-6">
+    <h3 class="font-bold text-lg">Quantity Surveyor</h3>
+    <p class="text-blue-300">Mayura Construction | Chennai (2019 – 2022)</p>
 
-  <br/>
+    <ul class="list-disc ml-5 mt-2 text-gray-200 space-y-1">
+      <li>Prepared BOQ, quantity take-off, and cost estimation</li>
+      <li>Certified RA bills based on site measurements</li>
+      <li>Supported subcontractor billing and procurement</li>
+      <li>Monitored site execution for compliance</li>
+    </ul>
+  </div>
 
-  <h3><b>Freelance Quantity Surveyor</b> | India (2018 – Present)</h3>
-  <ul>
-    <li>Delivered 7+ residential and commercial projects (~₹3.5 Cr value)</li>
-    <li>Managed full lifecycle: estimation → execution → cost control</li>
-    <li>Prepared AutoCAD-based quantity take-offs and BOQ</li>
-    <li>Coordinated site execution and subcontractors</li>
-  </ul>
+  <div>
+    <h3 class="font-bold text-lg">Freelance Quantity Surveyor</h3>
+    <p class="text-blue-300">India (2018 – Present)</p>
 
+    <ul class="list-disc ml-5 mt-2 text-gray-200 space-y-1">
+      <li>Delivered 7+ residential/commercial projects (~₹3.5 Cr value)</li>
+      <li>Handled estimation → execution → billing lifecycle</li>
+      <li>Prepared AutoCAD BOQ and quantity take-offs</li>
+      <li>Managed subcontractors and cost tracking</li>
+    </ul>
+  </div>
 </div>
 
 <!-- PROJECTS -->
 <div class="card">
-  <h2 class="text-xl font-semibold mb-2">Key Projects</h2>
-  <ul>
-    <li>Intel Semiconductor Facility – Malaysia</li>
-    <li>Petronas Fertilizer Plant – Malaysia</li>
-    <li>Residential Building – Thiruvarur (G+1, 2390 sq ft)</li>
-    <li>Commercial Space – Erode (~3500 sq ft)</li>
-  </ul>
+  <h2 class="text-2xl font-semibold mb-3">Key Projects</h2>
+
+  <div class="grid grid-cols-2 gap-3 text-gray-200">
+    <div>🏭 Intel Semiconductor Facility – Malaysia</div>
+    <div>🏭 Petronas Fertilizer Plant – Malaysia</div>
+    <div>🏠 Residential G+1 – Thiruvarur (2390 sq ft)</div>
+    <div>🏬 Commercial – Erode (~3500 sq ft)</div>
+  </div>
 </div>
 
 <!-- EDUCATION -->
 <div class="card">
-  <h2 class="text-xl font-semibold mb-2">Education</h2>
-  <p>Bachelor of Engineering in Civil Engineering</p>
-  <p>Anna University | Adhiyamaan College of Engineering | 2012 – 2016</p>
+  <h2 class="text-2xl font-semibold mb-2">Education</h2>
+  <p>Bachelor of Engineering – Civil Engineering</p>
+  <p class="text-gray-400">Anna University | 2012 – 2016</p>
 </div>
 
 </div>
